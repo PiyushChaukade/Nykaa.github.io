@@ -7,6 +7,8 @@ const {register , login} = require('./controllers/auth.controller');
 
 const userController = require('./controllers/user.controller');
 const signinController = require('./controllers/signin.controller');
+const productController = require('./controllers/product.controller');
+
 
 app.post("/login", login);
 app.post("/register", register);
@@ -49,5 +51,7 @@ app.get("/auth/google/failure", (req, res) => {
 
 app.use("/users", userController);
 app.use("/users/signin", signinController);
+app.use("/users/productsnew", productController);
+
 
 module.exports = app; 
