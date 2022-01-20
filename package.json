@@ -1,11 +1,9 @@
 {
   "name": "nykaa-clone-2.2",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "server":"nodemon src/server"
-
+    "server": "nodemon src/server"
   },
   "repository": {
     "type": "git",
@@ -30,5 +28,7 @@
     "passport": "^0.5.2",
     "passport-google-oauth2": "^0.2.0",
     "uuid": "^8.3.2"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
