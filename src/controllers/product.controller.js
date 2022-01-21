@@ -9,8 +9,6 @@ router.get('/', (req, res) => {
         // const prods= await Product.find().lean().exec();
     // console.log(prods)
     //prods=JSON.parse(prods)
-  
-
     //    res.send(prods)
        res.render("productsnew")
 
