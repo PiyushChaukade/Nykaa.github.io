@@ -1,629 +1,195 @@
 
-
-var data = [
-    { item:1,
-      trend:"FEATURED",
-      product_name:"Beardo Hair Growth Oil",
-      MRPcut:"₹750",
-      MRPcut1:750,
-      MRP:"₹585",
-      MRPsort:585,
-      totaldiscount:165,
-      discount:"22% Off",
-      discountsort:22,
-      total:"(400)",
-      image_urls:"img/star4.png",
-      rating:4,
-      name:1,
-      image_urlheart:"img/heart.png",
-      image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/b/e/beardo-hair-growth-oil.jpg",
-    },
-    
-    {item:2,
-    trend:"FEATURED",
-    product_name:"Ustraa Hair Growth Vitalizer - Boost Hair Growth, Prevents Hairfall With Redensyl, Jojoba Oil",
-    MRPcut:"₹699",
-    MRPcut1:699,
-    MRP:"₹559 ",
-    MRPsort:559,
-    totaldiscount:140,
-    discount:"20% Off",
-    discountsort:20,
-    total:"(207)",
-    image_urls:" img/star4.png",
-    rating:4,
-    name:20,
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904223818706hgv_1.jpg",
- },
-    {item:3,
-    trend:"FEATURED",
-    product_name:"Bombay Shaving Company Beard Care Starter Gift Kit",
-    MRPcut:"₹995",
-    MRPcut1:995,
-    MRP:"₹449",
-    MRPsort:449,
-    totaldiscount:546,
-    discount:"55% Off",
-    discountsort:55,
-    total:"(500)",
-    image_urls:" img/star5.png",
-    rating:5,
-    name:2,
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/3/3304c53655172771458_1pr.jpg",
- },
- {    item:4,
-      trend:"FEATURED",
-      product_name:"The Man Company Charcoal Face Wash With Ylang-Ylang & Argan",
-      MRPcut:"₹349",
-      MRPcut1:349,
-      MRP:"₹276",
-      MRPsort:276,
-      totaldiscount:73,
-      discount:"21% Off",
-      discountsort:21,
-      total:"(353)",
-      image_urls:"img/star4.png",
-      rating:4,
-      name:18,
-      image_urlheart:"img/heart.png",
-      image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8907367001867_tmc_1.jpg",
-    },
-    
-    {item:5,
-    trend:"BESTSELLER",
-    product_name:"MCaffeine Naked & Raw Tan Removal Coffee Body Scrub",
-    MRPcut:"₹449",
-    MRPcut1:449,
-    MRP:"₹395 ",
-    MRPsort:395,
-    totaldiscount:54,
-    discount:"12% Off",
-    discountsort:12,
-    total:"(36704)",
-    image_urls:" img/star5.png",
-    rating:5,
-    name:12,
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/2/a/2abbbbanykmcf0000002_1.jpg",
- },
-    {item:6,
-    trend:"BESTSELLER",
-    product_name:"MCaffeine Naked & Rich Deep Moisturizing Choco Body Butter",
-    MRPcut:"₹645",
-    MRPcut1:645,
-    MRP:"₹575",
-    MRPsort:575,
-    totaldiscount:70,
-    discount:"11% Off",
-    discountsort:11,
-    total:"(14593)",
-    image_urls:" img/star4.png",
-    rating:4,
-    name:16,
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/d/cd9f379nykmcf0000008_1_new.jpg",
- },
- { item:7,
-      trend:"BESTSELLER",
-      product_name:"MCaffeine Naked & Raw Coffee Body Polishing Oil",
-      MRPcut:"₹445",
-      MRPcut1:445,
-      MRP:"₹399",
-      MRPsort:399,
-      totaldiscount:46,
-      discount:"10% Off",
-      discountsort:10,
-      total:"(8492)",
-      image_urls:"img/star5.png", 
-       rating:5,
-       name:7,
-      image_urlheart:"img/heart.png",
-      image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/4/c4c1578nymcfn0000031_1rvm.jpg",
-    },
-    
-    {item:8,
-    trend:"BESTSELLER",
-    product_name:"MCaffeine Body Polishing Kit",
-    MRPcut:"₹1094",
-    MRPcut1:1094,
-    MRP:"₹865 ",
-    MRPsort:865,
-    totaldiscount:229,
-    discount:"21% Off",
-    discountsort:21,
-    total:"(3582)",
-    image_urls:" img/star5.png",
-    rating:5,
-    name:4,
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/e/e/eecdff9nymcfcom00033_1new.jpg",
- },
-    {item:9,
-    trend:"BESTSELLER",
-    product_name:"MCaffeine Naked & Raw Tan Removal Coffee Face Scrub",
-    MRPcut:"₹349",
-    MRPcut1:349,
-    MRP:"₹315",
-    MRPsort:315,
-    totaldiscount:34,
-    discount:"10% Off",
-    discountsort:10,
-    total:"(19744)",
-    image_urls:" img/star4.png",
-    rating:4,
-    name:15,
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/a/c/acf7ff9nykmcf0000004_1new.jpg",
- },
- {    item:10,
-      trend:"BESTSELLER",
-      product_name:"MCaffeine Naked & Raw Deep Cleansing Coffee Face Wash",
-      MRPcut:"₹349",
-      MRPcut1:349,
-      MRP:"₹315",
-      MRPsort:315,
-      totaldiscount:34,
-      discount:"10% Off",
-      discountsort:10,
-      total:"(16938)",
-      image_urls:"img/star4.png",
-      rating:4,
-      name:9,
-      image_urlheart:"img/heart.png",
-      image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/7/8/78b6578nykmcf0000003_1rvm.jpg",
-    },
-    
-    {item:11,
-    trend:"BESTSELLER",
-    product_name:"MCaffeine Naked & Raw Coffee Under Eye Cream - Relieves Dark Circles",
-    MRPcut:"₹675",
-    MRPcut1:675,
-    MRP:"₹515 ",
-    MRPsort:515,
-    totaldiscount:160,
-    discount:"10% Off",
-    discountsort:10,
-    total:"(5360)",
-    image_urls:" img/star5.png",
-    rating:5,
-    name:8,
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/e/f/efd9578nymcfn0000029_1rvm.jpg",
- },
-    {item:12,
-    trend:"BESTSELLER",
-    product_name:"MCaffeine Naked & Raw Moisturizing Coffee Body Lotion",
-    MRPcut:"₹375",
-    MRPcut1:375,
-    MRP:"₹319",
-    MRPsort:319,
-    totaldiscount:56,
-    discount:"15% Off",
-    discountsort:15,
-    total:"(5659)",
-    image_urls:" img/star5.png",
-    rating:5,
-    name:11,
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/0/5/05e9578nymcfn0000025_1rvm.jpg",
- },
-   { item:13,
-    trend:"OFFER",
-    product_name:"MCaffeine Naked Detox Hydrating Green Tea Face Serum",
-    MRPcut:"₹625",
-    MRPcut1:625,
-    MRP:"₹555",
-    MRPsort:535,
-    totaldiscount:70,
-    discount:"11% Off",
-    discountsort:11,
-    total:"(8702)",
-    image_urls:" img/star4.png",
-    rating:4,
-    name:6,
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/c/3c45053NYMCFN0000022_1new.jpg",
- },
- { item:14,
-      trend:"OFFER",
-      product_name:"MCaffeine Naked & Raw Coffee Face Serum",
-      MRPcut:"₹645",
-      MRPcut1:645,
-      MRP:"₹579",
-      MRPsort:579,
-      totaldiscount:66,
-      discount:"10% Off",
-      discountsort:10,
-      total:"(5708)",
-      image_urls:"img/star4.png",
-      rating:4,
-      name:10,
-      image_urlheart:"img/heart.png",
-      image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/1/c157735nymcfn0000032_nkw1.jpg",
-    },
-    
-    {item:15,
-    trend:"OFFER",
-    product_name:"MCaffeine Body Polishing Kit",
-    MRPcut:"₹1269",
-    MRPcut1:1269,
-    MRP:"₹995 ",
-    MRPsort:995,
-    totaldiscount:274,
-    discount:"22% Off",
-    discountsort:22,
-    total:"(655)",
-    image_urls:" img/star5.png",
-    rating:5,
-    name:5,
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/2/c2b2509nymcfcom00057_1.jpg",
- },
-    {item:16,
-    trend:"",
-    product_name:"Giorgio Armani Acqua Di Gio Eau De Toilette",
-    MRPcut:"",
-    
-    MRP:"₹8250",
-    MRPcut1:8250,
-    MRPsort:8250,
-    discount:"NOT APPLICABLE",
-    discountsort:1000,
-    totaldiscount:0,
-    total:"(19744)",
-    image_urls:" img/star4.png",
-    rating:4,
-    name:3,
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/g/i/giorgio-armani-acqua-di-gio-pour-homme-eau-de-toilette.jpg",
- },
- {    item:17,
-      trend:"OFFER",
-      product_name:"MCaffeine Naked & Raw Tan Removal Coffee Face Mask",
-      MRPcut:"₹575",
-      MRPcut1:575,
-      MRP:"₹515",
-      MRPsort:515,
-      totaldiscount:60,
-      discount:"10% Off",
-      discountsort:10,
-      total:"(293)",
-      image_urls:"img/star5.png",
-      rating:5,
-      name:14,
-      image_urlheart:"img/heart.png",
-      image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/b/8/b8e2578nykmcf0000009_1rvm.jpg",
-    },
-    
-    {item:18,
-    trend:"",
-    product_name:"Paco Rabanne 1 Million Eau De Toilette",
-    MRPcut:"",
-    MRPcut1:4400,
-    MRP:"₹4400 ",
-    MRPsort:4400,
-    discount:"NOT APPLICABLE",
-    discountsort:1000,
-    totaldiscount:0,
-    total:"(5360)",
-    image_urls:" img/star5.png",
-    rating:5,
-    name:17,
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/3/3349666007891_1.jpg",
- },
-    {item:19,
-    trend:"",
-    product_name:"United Colors Of Benetton United Dreams Be Strong Eau De Toilette For Men",
-    MRPcut:"₹1400",
-    MRPcut1:1400,
-    MRP:"₹700",
-    MRPsort:700,
-    totaldiscount:700,
-    discount:"50% Off",
-    discountsort:50,
-    total:"(459)",
-    image_urls:" img/star4.png",
-    rating:4,
-    name:19,
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/4/8433982002281_1_1.jpg",
- },
- {item:20,
-    trend:"OFFER",
-    product_name:"MCaffeine Exfoliate & Remove Tan Coffee Body Scrub - Pack Of 2",
-    MRPcut:"₹898",
-    MRPcut1:898,
-    MRP:"₹719 ",
-    MRPsort:719,
-    totaldiscount:179,
-    discount:"20% Off",
-    discountsort:20,
-    total:"(147)",
-    image_urls:" img/star5.png",
-    rating:5,
-    name:13,
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/7/575fff9nymcfcom00045_1new.jpg",
- },
-    
-  ];
+//  const Cart = require("../../src/models/cart.model")
 
 
+//popup right ------------------------------------------
 
 
+var openmodelbutt=document.querySelectorAll('[data-model-target]');
 
-let newdata= [
-    { item:1,
-      trend:"FEATURED",
-      product_name:"Beardo Hair Growth Oil",
-      MRPcut:"₹750",
-      MRP:"₹585",
-      MRPsort:585,
-      discount:"22% Off",
-      discountsort:22,
-      total:"(400)",
-      image_urls:"img/star4.png",
-      image_urlheart:"img/heart.png",
-      image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/b/e/beardo-hair-growth-oil.jpg",
-    },
+  var closemodelbutt=document.querySelectorAll('[data-close]');
+  var closemodelbutt1=document.querySelectorAll('[data-done]');
+  var overlay=document.getElementById("overlay");
+
+  openmodelbutt.forEach(button => {
+      button.addEventListener('click', () =>{
+          var model=document.querySelector(button.dataset.modelTarget)
+          openModel(model);
+      })
+
+  });
+
+  overlay.addEventListener('click',() => {
+      var models=document.querySelectorAll('.model.active');
+      models.forEach(model =>{
+          closeModel(model);
+      })
+  })
+
+
+  closemodelbutt.forEach(button => {
+      button.addEventListener('click', () =>{
+          var model=button.closest('.model')
+          closeModel(model);
+      })
+
+  })
+  closemodelbutt1.forEach(button => {
+      button.addEventListener('click', () =>{
+          var model=button.closest('.model')
+          closeModel(model);
+      })
+
+  })
+
+function  openModel(model){
+  if (model==null) return
+  model.classList.add('active');
+  overlay.classList.add('active');
+
+};
+
+function  closeModel(model){
+  if (model==null) return
+  model.classList.remove('active');
+  overlay.classList.remove('active');
+
+};
+
+//popup right  end------------------------------------------
+
+var Middlediv=document.getElementById("Middle");
+var tablemiddle=document.getElementById("tablemiddle");
+
+
+var mainDivpop = document.createElement("div");
+mainDivpop.setAttribute("id", "containermainpop");
+Middlediv.append(mainDivpop);
+
+var mainDivtable = document.createElement("div");
+mainDivtable.setAttribute("id", "containermaintable");
+tablemiddle.append(mainDivtable);
+
+
+const popupCart = (item) => {
+  
+  console.log("item:", item);
+
+    var imageDiv = document.createElement("div");
+    imageDiv.setAttribute("id","popupheart");
+ 
+    var imgappendpop = document.createElement("img");
+    imgappendpop.setAttribute("src", item.image_url);
+    imgappendpop.setAttribute("id", "imgappendpop");
+
+    var p1pop = document.createElement("p");
+    p1pop.setAttribute("id","namepop")
+    p1pop.textContent = item.product_name;
+
+    var span1pop = document.createElement("span");
+    span1pop.textContent =item.MRPcut;
+    span1pop.setAttribute("id","span1pop")
+
+    var span2pop = document.createElement("span");
+    span2pop.textContent =" "+item.MRP;
+    span2pop.setAttribute("id","span2pop")
+
+    imageDiv.append(imgappendpop,p1pop,span1pop,span2pop);
+    console.log("herer")
     
-    {item:2,
-    trend:"FEATURED",
-    product_name:"Ustraa Hair Growth Vitalizer - Boost Hair Growth, Prevents Hairfall With Redensyl, Jojoba Oil",
-    MRPcut:"₹699",
-    MRP:"₹559 ",
-    MRPsort:559,
-    discount:"20% Off",
-    discountsort:20,
-    total:"(207)",
-    image_urls:" img/star4.png",
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904223818706hgv_1.jpg",
- },
-    {item:3,
-    trend:"FEATURED",
-    product_name:"Bombay Shaving Company Beard Care Starter Gift Kit",
-    MRPcut:"₹995",
-    MRP:"₹449",
-    MRPsort:449,
-    discount:"55% Off",
-    discountsort:55,
-    total:"(500)",
-    image_urls:" img/star5.png",
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/3/3304c53655172771458_1pr.jpg",
- },
- {    item:4,
-      trend:"FEATURED",
-      product_name:"The Man Company Charcoal Face Wash With Ylang-Ylang & Argan",
-      MRPcut:"₹349",
-      MRP:"₹276",
-      MRPsort:276,
-      discount:"21% Off",
-      discountsort:21,
-      total:"(353)",
-      image_urls:"img/star4.png",
-      image_urlheart:"img/heart.png",
-      image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8907367001867_tmc_1.jpg",
-    },
-    
-    {item:5,
-    trend:"BESTSELLER",
-    product_name:"MCaffeine Naked & Raw Tan Removal Coffee Body Scrub",
-    MRPcut:"₹449",
-    MRP:"₹395 ",
-    MRPsort:395,
-    discount:"12% Off",
-    discountsort:12,
-    total:"(36704)",
-    image_urls:" img/star5.png",
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/2/a/2abbbbanykmcf0000002_1.jpg",
- },
-    {item:6,
-    trend:"BESTSELLER",
-    product_name:"MCaffeine Naked & Rich Deep Moisturizing Choco Body Butter",
-    MRPcut:"₹645",
-    MRP:"₹575",
-    MRPsort:575,
-    discount:"11% Off",
-    discountsort:11,
-    total:"(14593)",
-    image_urls:" img/star4.png",
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/d/cd9f379nykmcf0000008_1_new.jpg",
- },
- { item:7,
-      trend:"BESTSELLER",
-      product_name:"MCaffeine Naked & Raw Coffee Body Polishing Oil",
-      MRPcut:"₹445",
-      MRP:"₹399",
-      MRPsort:399,
-      discount:"10% Off",
-      discountsort:10,
-      total:"(8492)",
-      image_urls:"img/star5.png",
-      image_urlheart:"img/heart.png",
-      image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/4/c4c1578nymcfn0000031_1rvm.jpg",
-    },
-    
-    {item:8,
-    trend:"BESTSELLER",
-    product_name:"MCaffeine Body Polishing Kit",
-    MRPcut:"₹1094",
-    MRP:"₹865",
-    MRPsort:865,
-    discount:"21% Off",
-    discountsort:21,
-    total:"(3582)",
-    image_urls:" img/star5.png",
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/e/e/eecdff9nymcfcom00033_1new.jpg",
- },
-    {item:9,
-    trend:"BESTSELLER",
-    product_name:"MCaffeine Naked & Raw Tan Removal Coffee Face Scrub",
-    MRPcut:"₹349",
-    MRP:"₹315",
-    MRPsort:315,
-    discount:"10% Off",
-    discountsort:10,
-    total:"(19744)",
-    image_urls:" img/star4.png",
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/a/c/acf7ff9nykmcf0000004_1new.jpg",
- },
- {    item:10,
-      trend:"BESTSELLER",
-      product_name:"MCaffeine Naked & Raw Deep Cleansing Coffee Face Wash",
-      MRPcut:"₹349",
-      MRP:"₹315",
-      MRPsort:315,
-      discount:"10% Off",
-      discountsort:10,
-      total:"(16938)",
-      image_urls:"img/star4.png",
-      image_urlheart:"img/heart.png",
-      image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/7/8/78b6578nykmcf0000003_1rvm.jpg",
-    },
-    
-    {item:11,
-    trend:"BESTSELLER",
-    product_name:"MCaffeine Naked & Raw Coffee Under Eye Cream - Relieves Dark Circles",
-    MRPcut:"₹675",
-    MRP:"₹515 ",
-    MRPsort:515,
-    discount:"10% Off",
-    discountsort:10,
-    total:"(5360)",
-    image_urls:"img/star5.png",
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/e/f/efd9578nymcfn0000029_1rvm.jpg",
- },
-    {item:12,
-    trend:"BESTSELLER",
-    product_name:"MCaffeine Naked & Raw Moisturizing Coffee Body Lotion",
-    MRPcut:"₹375",
-    MRP:"₹319",
-    MRPsort:319,
-    discount:"15% Off",
-    discountsort:15,
-    total:"(5659)",
-    image_urls:" img/star5.png",
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/0/5/05e9578nymcfn0000025_1rvm.jpg",
- },
-   { item:13,
-    trend:"OFFER",
-    product_name:"MCaffeine Naked Detox Hydrating Green Tea Face Serum",
-    MRPcut:"₹625",
-    MRP:"₹555",
-    MRPsort:535,
-    discount:"11% Off",
-    discountsort:11,
-    total:"(8702)",
-    image_urls:" img/star4.png",
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/c/3c45053NYMCFN0000022_1new.jpg",
- },
- { item:14,
-      trend:"OFFER",
-      product_name:"MCaffeine Naked & Raw Coffee Face Serum",
-      MRPcut:"₹645",
-      MRP:"₹579",
-      MRPsort:579,
-      discount:"10% Off",
-      discountsort:10,
-      total:"(5708)",
-      image_urls:"img/star4.png",
-      image_urlheart:"img/heart.png",
-      image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/1/c157735nymcfn0000032_nkw1.jpg",
-    },
-    
-    {item:15,
-    trend:"OFFER",
-    product_name:"MCaffeine Body Polishing Kit",
-    MRPcut:"₹1269",
-    MRP:"₹995 ",
-    MRPsort:995,
-    discount:"22% Off",
-    discountsort:22,
-    total:"(655)",
-    image_urls:" img/star5.png",
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/2/c2b2509nymcfcom00057_1.jpg",
- },
-    {item:16,
-    trend:"",
-    product_name:"Giorgio Armani Acqua Di Gio Eau De Toilette",
-    MRPcut:"",
-    MRP:"₹8250",
-    MRPsort:8250,
-    discount:"",
-    discountsort:1000,
-    total:"(19744)",
-    image_urls:" img/star4.png",
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/g/i/giorgio-armani-acqua-di-gio-pour-homme-eau-de-toilette.jpg",
- },
- {    item:17,
-      trend:"OFFER",
-      product_name:"MCaffeine Naked & Raw Tan Removal Coffee Face Mask",
-      MRPcut:"₹575",
-      MRP:"₹515",
-      MRPsort:515,
-      discount:"10% Off",
-      discountsort:10,
-      total:"(293)",
-      image_urls:"img/star5.png",
-      image_urlheart:"img/heart.png",
-      image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/b/8/b8e2578nykmcf0000009_1rvm.jpg",
-    },
-    
-    {item:18,
-    trend:"",
-    product_name:"Paco Rabanne 1 Million Eau De Toilette",
-    MRPcut:"",
-    MRP:"₹4400 ",
-    MRPsort:4400,
-    discount:"",
-    discountsort:1000,
-    total:"(5360)",
-    image_urls:" img/star5.png",
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/3/3349666007891_1.jpg",
- },
-    {item:19,
-    trend:"",
-    product_name:"United Colors Of Benetton United Dreams Be Strong Eau De Toilette For Men",
-    MRPcut:"₹1400",
-    MRP:"₹700",
-    MRPsort:700,
-    discount:"50% Off",
-    discountsort:50,
-    total:"(459)",
-    image_urls:" img/star4.png",
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/4/8433982002281_1_1.jpg",
- },
- {item:20,
-    trend:"OFFER",
-    product_name:"MCaffeine Exfoliate & Remove Tan Coffee Body Scrub - Pack Of 2",
-    MRPcut:"₹898",
-    MRP:"₹719 ",
-    MRPsort:719,
-    discount:"20% Off",
-    discountsort:20,
-    total:"(147)",
-    image_urls:" img/star5.png",
-    image_urlheart:"img/heart.png",
-    image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/7/575fff9nymcfcom00045_1new.jpg",
- },
-    
-  ];
+
+//------table------------------------------------------------------
+
+    var tablediv = document.createElement("div");
+    tablediv.setAttribute("id","tablediv");
+
+   var table=document.createElement("table");
+
+   var thead=document.createElement("thead")
+
+   var tr=document.createElement("tr")
+
+   var th=document.createElement("th")
+   th.textContent="Payment Details";
+
+   tr.append(th);
+   thead.append(tr);
+
+   var tbody=document.createElement("tbody");
+
+   var tr1=document.createElement("tr");
+
+   var td1=document.createElement("td");
+   td1.textContent="Bag Total"
+   var td2=document.createElement("td");
+   td2.textContent=item.MRPcut1;
+   tr1.append(td1,td2)
+
+  var tr2=document.createElement("tr");
+
+  var td3=document.createElement("td");
+  td3.textContent="Bag Discount"
+  var td4=document.createElement("td");
+  td4.textContent="-"+item.totaldiscount;
+  tr2.append(td3,td4)
+
+  var tr3=document.createElement("tr");
+
+  var td5=document.createElement("td");
+  td5.textContent="Sub Total"
+  var td6=document.createElement("td");
+  td6.textContent=item.MRP;
+  tr3.append(td5,td6)
+
+
+  var tr4=document.createElement("tr");
+
+  var td7=document.createElement("td");
+  td7.textContent="Shipping Charge "
+  var td8=document.createElement("td");
+  td8.textContent="FREE";
+  tr4.append(td7,td8)
+
+  var tr5=document.createElement("tr");
+
+  var td9=document.createElement("td");
+  td9.textContent="Have a coupon ? "
+  var td10=document.createElement("td");
+  td10.textContent="View Coupons";
+  tr5.append(td9,td10)
+
+ var tr6=document.createElement("tr");
+
+  var td11=document.createElement("td");
+  td11.textContent="Discount "
+  var td12=document.createElement("td");
+  td12.textContent=item.discount;
+  tr6.append(td11,td12)
+
+tbody.append(tr1,tr2,tr3,tr6,tr4,tr5)
+
+table.append(thead,tbody)
+
+tablediv.append(table)
+
+mainDivpop.append(imageDiv,tablediv);
+
+    localStorage.setItem("popupcartitem", JSON.stringify(item));
+ 
+}
+
+
+const addCart = (item) => {
+    console.log("item:", item);
+    localStorage.setItem("CartItemnykaa", JSON.stringify(item));
+    window.open("productdetail.html");
+};
+
+function cartpage(){
+  window.location.href="Addres.html"
+}
+
+//-------------------------------------------------------------------
 
 var indexvalue=1;
     showimg(indexvalue);
@@ -1089,29 +655,17 @@ if (count13 % 2 == 1) {
 }
 btn13.addEventListener('click', create13)
 
-
-// container left down pop up end------------------------------
-
-
-  //  localStorage.setItem("nykaa",JSON.stringify(data));
-
-  //  var prod=JSON.parse(localStorage.getItem("nykaa"));
-
-
-//    var productnew=localStorage.getItem("nykaa");
-// console.log(productnew)
+//--------------------------------------------------------------------------------------------
 
 let prod;
 product_nkyaa();
 async function product_nkyaa() {
   try {
-    //mongodb+srv://rohit:123456a@cluster0.clhww.mongodb.net/nykaa
+
     let prods1= await fetch('http://localhost:1880/products');
-  console.log("prods1",prods1)
+
      prod = await prods1.json();
-    //console.log("ADAHDG")
-    //console.log("prod",prod)
-   
+
     showProducts(prod)
   } catch (err) { 
     console.log(err.message);
@@ -1119,26 +673,20 @@ async function product_nkyaa() {
 }
 
 
-
-// let datawhatsnew;
-// let data;
-// let count1;
-// dataherko();
-// dataherko1();
-
-// async function dataherko() {
-//   try {
-//     let datas = await fetch('http://localhost:1880/users/productsnew');
-//     let d = await datas.json();
+let newdata;
+product_nkyaa1();
+async function product_nkyaa1() {
+  try {
+ 
+    let prods2= await fetch('http://localhost:1880/products');
+  
+  newdata = await prods2.json();
    
-//     data = d
-//     count1 = data.length;
-//     displayProduct(data);
-//   } catch (err) { 
-//     console.log(err.message);
-//   }
-// }
-
+    showProducts(newdata)
+  } catch (err) { 
+    console.log(err.message);
+  }
+}
 
 
   var right = document.getElementById("container_right");
@@ -1481,12 +1029,16 @@ let showProducts = (product) => {
     heartdiv.style.margin="auto";
     heartdiv.style.display="block"
     heartdiv.setAttribute("id","simple");
+
+
     heartdiv.addEventListener("click",function(){
       popupCart(item)
       console.log("yeahhh")
       // document.getElementById('simple').click();
            openmodelbutt.forEach(button => {
-            var model=document.querySelector(button.dataset.modelTarget)
+            var model= document.querySelector(button.dataset.modelTarget)
+            // const carts =await Cart.create(item)
+            // res.send(carts)
             openModel(model);
           
     });
@@ -1517,199 +1069,6 @@ let showProducts = (product) => {
 showProducts(prod);
 
 
-
-//popup right ------------------------------------------
-
-
-var openmodelbutt=document.querySelectorAll('[data-model-target]');
-
-  var closemodelbutt=document.querySelectorAll('[data-close]');
-  var closemodelbutt1=document.querySelectorAll('[data-done]');
-  var overlay=document.getElementById("overlay");
-
-  openmodelbutt.forEach(button => {
-      button.addEventListener('click', () =>{
-          var model=document.querySelector(button.dataset.modelTarget)
-          openModel(model);
-      })
-
-  });
-
- 
-  overlay.addEventListener('click',() => {
-      var models=document.querySelectorAll('.model.active');
-      models.forEach(model =>{
-          closeModel(model);
-      })
-  })
-
-
-  closemodelbutt.forEach(button => {
-      button.addEventListener('click', () =>{
-          var model=button.closest('.model')
-          closeModel(model);
-      })
-
-  })
-  closemodelbutt1.forEach(button => {
-      button.addEventListener('click', () =>{
-          var model=button.closest('.model')
-          closeModel(model);
-      })
-
-  })
-
-function  openModel(model){
-  if (model==null) return
-  model.classList.add('active');
-  overlay.classList.add('active');
-
-};
-
-function  closeModel(model){
-  if (model==null) return
-  model.classList.remove('active');
-  overlay.classList.remove('active');
-
-};
-
-
-
-//popup right  end------------------------------------------
-
-
-
-var Middlediv=document.getElementById("Middle");
-var tablemiddle=document.getElementById("tablemiddle");
-
-
-var mainDivpop = document.createElement("div");
-mainDivpop.setAttribute("id", "containermainpop");
-Middlediv.append(mainDivpop);
-
-var mainDivtable = document.createElement("div");
-mainDivtable.setAttribute("id", "containermaintable");
-tablemiddle.append(mainDivtable);
-
-
-const popupCart = (item) => {
-  
-  console.log("item:", item);
-
-    var imageDiv = document.createElement("div");
-    imageDiv.setAttribute("id","popupheart");
- 
-    var imgappendpop = document.createElement("img");
-    imgappendpop.setAttribute("src", item.image_url);
-    imgappendpop.setAttribute("id", "imgappendpop");
-
-    var p1pop = document.createElement("p");
-    p1pop.setAttribute("id","namepop")
-    p1pop.textContent = item.product_name;
-
-    var span1pop = document.createElement("span");
-    span1pop.textContent =item.MRPcut;
-    span1pop.setAttribute("id","span1pop")
-
-    var span2pop = document.createElement("span");
-    span2pop.textContent =" "+item.MRP;
-    span2pop.setAttribute("id","span2pop")
-
-    imageDiv.append(imgappendpop,p1pop,span1pop,span2pop);
-    console.log("herer")
-    
-
-//------table------------------------------------------------------
-
-    var tablediv = document.createElement("div");
-    tablediv.setAttribute("id","tablediv");
-
-   var table=document.createElement("table");
-
-   var thead=document.createElement("thead")
-
-   var tr=document.createElement("tr")
-
-   var th=document.createElement("th")
-   th.textContent="Payment Details";
-
-   tr.append(th);
-   thead.append(tr);
-
-   var tbody=document.createElement("tbody");
-
-   var tr1=document.createElement("tr");
-
-   var td1=document.createElement("td");
-   td1.textContent="Bag Total"
-   var td2=document.createElement("td");
-   td2.textContent=item.MRPcut1;
-   tr1.append(td1,td2)
-
-  var tr2=document.createElement("tr");
-
-  var td3=document.createElement("td");
-  td3.textContent="Bag Discount"
-  var td4=document.createElement("td");
-  td4.textContent="-"+item.totaldiscount;
-  tr2.append(td3,td4)
-
-  var tr3=document.createElement("tr");
-
-  var td5=document.createElement("td");
-  td5.textContent="Sub Total"
-  var td6=document.createElement("td");
-  td6.textContent=item.MRP;
-  tr3.append(td5,td6)
-
-
-  var tr4=document.createElement("tr");
-
-  var td7=document.createElement("td");
-  td7.textContent="Shipping Charge "
-  var td8=document.createElement("td");
-  td8.textContent="FREE";
-  tr4.append(td7,td8)
-
-  var tr5=document.createElement("tr");
-
-  var td9=document.createElement("td");
-  td9.textContent="Have a coupon ? "
-  var td10=document.createElement("td");
-  td10.textContent="View Coupons";
-  tr5.append(td9,td10)
-
- var tr6=document.createElement("tr");
-
-  var td11=document.createElement("td");
-  td11.textContent="Discount "
-  var td12=document.createElement("td");
-  td12.textContent=item.discount;
-  tr6.append(td11,td12)
-
-tbody.append(tr1,tr2,tr3,tr6,tr4,tr5)
-
-table.append(thead,tbody)
-
-tablediv.append(table)
-
-mainDivpop.append(imageDiv,tablediv);
-
-    localStorage.setItem("popupcartitem", JSON.stringify(item));
- 
-}
-
-
-
-const addCart = (item) => {
-    console.log("item:", item);
-    localStorage.setItem("CartItemnykaa", JSON.stringify(item));
-    window.open("productdetail.html");
-};
-
-function cartpage(){
-  window.location.href="Addres.html"
-}
 
 
 

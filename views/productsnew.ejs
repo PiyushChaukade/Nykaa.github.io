@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <%- include("./partials/head.ejs", {title: "Products_Nykaa" }) %>
+  <link rel="icon" href="image/favicon.ico" />
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
     <link rel="stylesheet" href="/styles/products.css">
+    
+    <link rel="stylesheet" type="text/css" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/slider_style.css">
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/navbarbrand.css" />
+    <link rel="stylesheet" href="/styles/Hower_content.css" />
+    <link rel="stylesheet" href="/styles/chat.css">
+
+
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -15,6 +28,9 @@
 
 </head>
 <body>
+
+  <%- include("./partials/header.ejs") %>
+
 <div id="container">
 
 
@@ -167,6 +183,12 @@
 </div>
 <div id="simple"data-model-target="#model" ></div>
 
+
+  <!-- footer -->
+  <div id="blurr1">
+    <%- include("./partials/footer.ejs") %>
+  </div>
+  <!-- footer -->
 
 </body>
 </html>
