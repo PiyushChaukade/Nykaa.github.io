@@ -4,31 +4,42 @@ const router = express.Router();
 const Product= require("../models/products.model")
 
 
-
-// router.get('/',async (req, res) => {
-//     try{
-//         const prods= await Product.find().lean().exec();
-//        //console.log(prods)
-//         return res.render("productsnew")
-//         // .send(prods)
-
-//     } catch(err){
-//         res.send(err.message);
-//     }
-// })
-
-router.get('/',async (req, res) => {
+router.get('/', (req, res) => {
     try{
-        const prods= await Product.find().lean().exec();
+        // const prods= await Product.find().lean().exec();
     // console.log(prods)
- //prods=JSON.parse(prods)
+    //prods=JSON.parse(prods)
   
 
-        return res.render("productsnew",prods)
+    //    res.send(prods)
+       res.render("productsnew")
 
     } catch(err){
         res.send(err.message);
     }
 })
 
+
 module.exports = router;
+
+
+
+// const router = require('express').Router()
+
+
+// router.get("/menjackets", (req, res) => {
+//     res.render("product page/productjackets");
+//   });
+  
+// router.get("/menjeans", (req, res) => {
+//     res.render("product page/productjeans");
+// });
+  
+// router.get("/womenjeans", (req, res) => {
+//     res.render("product page/productwomenjeans");
+//   });
+
+// router.get("/womentshirt", (req, res) => {
+//     res.render("product page/productwomentshirt");
+//   });
+// module.exports = router;

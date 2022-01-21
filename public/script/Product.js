@@ -1093,21 +1093,6 @@ btn13.addEventListener('click', create13)
 // container left down pop up end------------------------------
 
 
-async function try1(req,res){
-try {
-  var prodddd= await  fetch('http://localhost:1880/users/productsnew');
-  console.log(prodddd)
-} catch (error) {
-  
-}
-}
-try1();
-
-//console.log(prods)
-  //container1
-  //left bar 1
-  
-
   //  localStorage.setItem("nykaa",JSON.stringify(data));
 
   //  var prod=JSON.parse(localStorage.getItem("nykaa"));
@@ -1116,23 +1101,45 @@ try1();
 //    var productnew=localStorage.getItem("nykaa");
 // console.log(productnew)
 
-// let prod;
-
-// async function product_nkyaa() {
-//   try {
-//     //mongodb+srv://rohit:123456a@cluster0.clhww.mongodb.net/nykaa
-//     let prods1= await fetch('http://localhost:1880/users/productsnew');
-//     console.log("prods1",prods1)
-//      prod = await prods1.json();
-//     console.log("ADAHDG")
-//     console.log("prod",prod)
+let prod;
+product_nkyaa();
+async function product_nkyaa() {
+  try {
+    //mongodb+srv://rohit:123456a@cluster0.clhww.mongodb.net/nykaa
+    let prods1= await fetch('http://localhost:1880/users/productsnew');
+  console.log("prods1",prods1)
+     prod = await prods1.json();
+    //console.log("ADAHDG")
+    //console.log("prod",prod)
    
-//     showProducts(prod)
+    showProducts(prod)
+  } catch (err) { 
+    console.log(err.message);
+  }
+}
+
+
+
+// let datawhatsnew;
+// let data;
+// let count1;
+// dataherko();
+// dataherko1();
+
+// async function dataherko() {
+//   try {
+//     let datas = await fetch('http://localhost:1880/users/productsnew');
+//     let d = await datas.json();
+   
+//     data = d
+//     count1 = data.length;
+//     displayProduct(data);
 //   } catch (err) { 
 //     console.log(err.message);
 //   }
 // }
-// product_nkyaa();
+
+
 
   var right = document.getElementById("container_right");
   var mainDiv = document.createElement("div");
