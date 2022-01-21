@@ -1106,7 +1106,7 @@ product_nkyaa();
 async function product_nkyaa() {
   try {
     //mongodb+srv://rohit:123456a@cluster0.clhww.mongodb.net/nykaa
-    let prods1= await fetch('http://localhost:1880/users/productsnew');
+    let prods1= await fetch('http://localhost:1880/products');
   console.log("prods1",prods1)
      prod = await prods1.json();
     //console.log("ADAHDG")
