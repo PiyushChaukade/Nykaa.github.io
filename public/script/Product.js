@@ -71,9 +71,9 @@ mainDivtable.setAttribute("id", "containermaintable");
 tablemiddle.append(mainDivtable);
 
 
-const popupCart = (item) => {
+function popupCart(item){
   
-  console.log("item:", item);
+  console.log("item1:", item);
 
     var imageDiv = document.createElement("div");
     imageDiv.setAttribute("id","popupheart");
@@ -685,6 +685,20 @@ async function product_nkyaa1() {
     showProducts(newdata)
   } catch (err) { 
     console.log(err.message);
+  }
+}
+
+let cartData;
+cart_nykaa1();
+async function cart_nykaa1() {
+  try {
+    let carts2 = await fetch('http://localhost:1880/carts');
+
+    newCartData = await carts2.json();
+
+    popupCart(newCartData)
+  } catch (error) {
+    console.log(error.message);
   }
 }
 

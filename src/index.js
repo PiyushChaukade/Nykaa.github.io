@@ -9,6 +9,8 @@ const userController = require('./controllers/user.controller');
 const signinController = require('./controllers/signin.controller');
 const productController = require('./controllers/product.controller');
 const productapiController = require('./controllers/productapi.controller.');
+const cartapiController = require('./controllers/cartapi.controller');
+const cartController = require('./controllers/cart.controller');
 
 
 app.post("/login", login);
@@ -54,5 +56,6 @@ app.use("/users", userController);
 app.use("/users/signin", signinController);
 app.use("/users/productsnew", productController);
 app.use("/products", productapiController);
+app.use("/carts", cartapiController);
 
 module.exports = app; 
