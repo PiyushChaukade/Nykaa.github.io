@@ -1044,6 +1044,7 @@ let showProducts = (product) => {
     });
     
     })
+
    
     var heartimg=document.createElement("img");
     heartimg.setAttribute("src", item.image_urlheart);
@@ -1067,7 +1068,6 @@ let showProducts = (product) => {
   });
 }
 showProducts(prod);
-
 
 
 
