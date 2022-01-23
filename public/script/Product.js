@@ -73,7 +73,7 @@ tablemiddle.append(mainDivtable);
 
 function popupCart(item){
   
-  console.log("item1:", item);
+//  console.log("item1:", item);
 
     var imageDiv = document.createElement("div");
     imageDiv.setAttribute("id","popupheart");
@@ -95,7 +95,7 @@ function popupCart(item){
     span2pop.setAttribute("id","span2pop")
 
     imageDiv.append(imgappendpop,p1pop,span1pop,span2pop);
-    console.log("herer")
+    //console.log("herer")
     
 
 //------table------------------------------------------------------
@@ -174,6 +174,8 @@ tablediv.append(table)
 
 mainDivpop.append(imageDiv,tablediv);
 
+
+     
     localStorage.setItem("popupcartitem", JSON.stringify(item));
  
 }
@@ -181,13 +183,21 @@ mainDivpop.append(imageDiv,tablediv);
 
 const addCart = (item) => {
     console.log("item:", item);
+
+    // fetch(`http://localhost:1880/carts`, {
+    //   method: "POST",
+    //   body : JSON.stringify(item._id),
+    //   headers : {
+    //     "Content-Type" : "application/json"
+    //   }
+    // })
+
+
     localStorage.setItem("CartItemnykaa", JSON.stringify(item));
     window.open("productdetail.html");
 };
 
-function cartpage(){
-  window.location.href="Addres.html"
-}
+
 
 //-------------------------------------------------------------------
 
@@ -688,19 +698,19 @@ async function product_nkyaa1() {
   }
 }
 
-let cartData;
-cart_nykaa1();
-async function cart_nykaa1() {
-  try {
-    let carts2 = await fetch('http://localhost:1880/carts');
+// let cartData;
+// cart_nykaa1();
+// async function cart_nykaa1() {
+//   try {
+//     let carts2 = await fetch('http://localhost:1880/carts');
 
-    newCartData = await carts2.json();
+//     newCartData = await carts2.json();
 
-    popupCart(newCartData)
-  } catch (error) {
-    console.log(error.message);
-  }
-}
+//     popupCart(newCartData)
+//   } catch (error) {
+//     console.log(error.message);
+//   }
+// }
 
 
   var right = document.getElementById("container_right");
@@ -966,7 +976,7 @@ let above4000=(prod)=>{
   }
 }
 
-
+let dataid;
 //-----------------------------------------
 let showProducts = (product) => {
     document.getElementById("containermain").innerHTML="";
@@ -1047,7 +1057,17 @@ let showProducts = (product) => {
 
     heartdiv.addEventListener("click",function(){
       popupCart(item)
+      console.log(JSON.stringify(item._id))
       console.log("yeahhh")
+      dataid = item._id;
+      //console.log(item._id)
+//       fetch(`http://localhost:1880/carts`, {
+//       method: "POST",
+//       body : JSON.stringify(item._id),
+//       headers : {
+//     "Content-Type" : "application/json"
+//   }
+// })
       // document.getElementById('simple').click();
            openmodelbutt.forEach(button => {
             var model= document.querySelector(button.dataset.modelTarget)
@@ -1058,7 +1078,11 @@ let showProducts = (product) => {
     });
     
     })
-
+    
+    //  heartdiv.onclick = (item) =>{
+    
+     
+    //  }
    
     var heartimg=document.createElement("img");
     heartimg.setAttribute("src", item.image_urlheart);
@@ -1083,7 +1107,18 @@ let showProducts = (product) => {
 }
 showProducts(prod);
 
+function cartpage(){
+  //showSingleProd(dataid);
 
+ 
+  window.location.href="/carts"
+}
+
+// function showSingleProd (prodData)  {
+//   //console.log(prodData)
+//   window.location.href = `/carts/${prodData}`
+
+// }
 
 
 
