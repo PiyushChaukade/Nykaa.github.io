@@ -112,6 +112,7 @@ function popupCart(item){
    var th=document.createElement("th")
    th.textContent="Payment Details";
 
+
    tr.append(th);
    thead.append(tr);
 
@@ -182,7 +183,7 @@ mainDivpop.append(imageDiv,tablediv);
 const addCart = (item) => {
     console.log("item:", item);
     localStorage.setItem("CartItemnykaa", JSON.stringify(item));
-    window.open("productdetail.html");
+    window.open("Address");
 };
 
 function cartpage(){

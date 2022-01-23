@@ -321,9 +321,9 @@ cursor: pointer;
     transform: translate(-1%, -1%) scale(0);
     transition: 200ms ease-in-out;
     border-radius: 5px;
-    max-height: 100vh;
+    max-height: 99%;
     background-color: whitesmoke;
-    width: 30%;
+    width: 33%;
     overflow: scroll;
     z-index: 10;
   }
@@ -334,7 +334,7 @@ cursor: pointer;
   #model{
       background: rgb(243,243,243);
       padding: 20px;
-      height: 700px;
+      height: 1200px;
        
   }
   #popupcolor{
@@ -386,6 +386,7 @@ cursor: pointer;
   }
   
   .Footer {
+    
     margin: auto;
     justify-content: center;
     text-align: center;
