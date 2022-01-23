@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
     try{
-         const carts= await Cart.create(req.body).lean().exec();
+         const carts= await Cart.create(req.body);
     
          res.status(200).send(carts);
         } catch (err) { 
