@@ -1,7 +1,7 @@
 const express= require('express');
 const router = express.Router();
 
-const Address= require("../models/address.model");
+//const Address= require("../models/address.model");
 
 router.get('/', async (req, res) => {
     try{
@@ -10,6 +10,7 @@ router.get('/', async (req, res) => {
             console.log(err.message);
         }
 })
+
 // router.post('/post', async (req, res) => {
 //     try{
 //          const address= await Address.create(req.body)

@@ -183,12 +183,12 @@ mainDivpop.append(imageDiv,tablediv);
 const addCart = (item) => {
     console.log("item:", item);
     localStorage.setItem("CartItemnykaa", JSON.stringify(item));
-    //window.open("Address");
+    window.open("productsnew");
 };
 
-function cartpage(){
-  window.location.href="/users/productsnew/addresses"
-}
+// function cartpage(){
+//   window.location.href="/users/address"
+// }
 
 //-------------------------------------------------------------------
 
