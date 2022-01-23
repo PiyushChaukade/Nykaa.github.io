@@ -14,12 +14,12 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
     /> -->
 
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
-    />
+    /> -->
 
-    <title>Address</title>
+    <title>Payment</title>
     <style>
       body {
         background-color: #f3f3f3;
@@ -60,6 +60,7 @@
         margin-left: 30px;
         border-radius: 8px;
       }
+      /* --- */
       .choose {
         margin: 10px;
         margin-left: 50px;
@@ -105,7 +106,7 @@
         /* height: ; */
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 3px 0px;
-        /* max-height: 335px; */
+        max-height: 335px;
       }
       .col3 {
         width: 28%;
@@ -172,19 +173,15 @@
         background-color: rgb(255, 255, 255);
         margin-bottom: 14px;
         overflow: scroll;
-        /* display: none; */
         display: flex;
       }
+
       #details > div {
-        margin-bottom: 16px;
+        margin-bottom: 20px;
       }
       #details {
         margin-top: 38px;
         margin-left: 10px;
-      }
-      #imgid {
-        width: 100%;
-        height: 120px;
       }
       #imgdiv {
         margin-top: 10%;
@@ -193,6 +190,7 @@
         height: 120px;
         background-color: greenyellow;
       }
+
       .ttyy {
         margin-top: -10;
         /* background-color: hotpink; */
@@ -205,77 +203,17 @@
         margin-left: 16px;
         margin-top: 20px;
       }
-      /* --------------------------------------------- */
       .col2 > div:nth-child(2) > input:focus {
         border: none;
         margin-bottom: 14px;
       }
       .col2 > div:nth-child(2) > input {
         border: none;
-        width: 80%;
       }
       .col2 > div:nth-child(2) {
         padding: 14px;
         border-bottom: solid rgb(202, 199, 199) 0.5px;
       }
-      /* --------------------------------------------------- */
-      /* --------------------------------------------- */
-      .col2 > div:nth-child(3) > input:focus {
-        border: none;
-        margin-bottom: 14px;
-      }
-      .col2 > div:nth-child(3) > input {
-        border: none;
-        width: 80%;
-      }
-      .col2 > div:nth-child(3) {
-        padding: 14px;
-        border-bottom: solid rgb(202, 199, 199) 0.5px;
-      }
-      /* --------------------------------------------------- */
-      /* --------------------------------------------- */
-      .col2 > div:nth-child(4) > input:focus {
-        border: none;
-        margin-bottom: 14px;
-      }
-      .col2 > div:nth-child(4) > input {
-        border: none;
-        width: 80%;
-      }
-      .col2 > div:nth-child(4) {
-        padding: 14px;
-        border-bottom: solid rgb(202, 199, 199) 0.5px;
-      }
-      /* --------------------------------------------------- */
-      /* --------------------------------------------- */
-      .col2 > div:nth-child(5) > input:focus {
-        border: none;
-        margin-bottom: 14px;
-      }
-      .col2 > div:nth-child(5) > input {
-        border: none;
-        width: 80%;
-      }
-      .col2 > div:nth-child(5) {
-        padding: 14px;
-        border-bottom: solid rgb(202, 199, 199) 0.5px;
-      }
-      /* --------------------------------------------------- */
-      /* --------------------------------------------- */
-      .col2 > div:nth-child(6) > input:focus {
-        border: none;
-        margin-bottom: 14px;
-      }
-      .col2 > div:nth-child(6) > input {
-        border: none;
-        height: 70px;
-        width: 80%;
-      }
-      .col2 > div:nth-child(6) {
-        padding: 14px;
-        border-bottom: solid rgb(202, 199, 199) 0.5px;
-      }
-      /* --------------------------------------------------- */
       .col2 > div:nth-child(1) {
         padding: 11px;
         border-bottom: solid rgb(202, 199, 199) 0.5px;
@@ -295,6 +233,17 @@
         display: flex;
       }
       #paynow {
+        width: 89%;
+        height: 45px;
+        background-color: #fc2779;
+        font-size: 16px;
+        font-weight: bolder;
+        color: white;
+        border: none;
+        margin-left: 5%;
+        margin-top: 3%;
+      }
+      .netpay {
         width: 89%;
         height: 45px;
         background-color: #fc2779;
@@ -336,6 +285,7 @@
       #mainn {
         border-bottom: #fc2779 solid 6px;
       }
+
       button:hover {
         cursor: pointer;
       }
@@ -368,9 +318,13 @@
         margin-left: 67.5%;
       }
       #fotter > img {
-        margin-top: 30px;
+        margin-top: 20px;
         /* margin-left: -10%; */
         width: 100%;
+      }
+      #imgid {
+        width: 100%;
+        height: 120px;
       }
     </style>
   </head>
@@ -385,14 +339,14 @@
       </div>
       <div id="space"></div>
       <div class="topnav">1-Login</div>
-      <div id="mainn" class="topnav">2-Address</div>
-      <div class="topnav">3-Payment</div>
+      <div class="topnav">2-Address</div>
+      <div id="mainn" class="topnav">3-Payment</div>
     </nav>
     <div class="container">
-      <!-- <div class="alert">
+      <div class="alert">
         <div>
           <img
-            src="https://cdn-icons.flaticon.com/png/512/5379/premium/5379443.png?token=exp=1639635712~hmac=7a1c69b2f0377be222186491cee7d310"
+            src=""
             alt=""
           />
         </div>
@@ -401,26 +355,21 @@
           delivery for your safety
         </p>
       </div>
-      <div class="choose">CHOOSE PAYMENT METHOD</div> -->
+      <div class="choose">CHOOSE PAYMENT METHOD</div>
       <div class="maincol">
         <div class="col1">
-          <div><p>Saved Address</p></div>
-          <div><p>New Address</p></div>
-          <!-- <div><p>GooglePay</p></div> -->
-          <!-- <div><p>Net Banking</p></div>
+          <div><p>Credit/Debit Card</p></div>
+          <div><p>UPI</p></div>
+          <div><p>GooglePay</p></div>
+          <div onclick="change()"><p>Net Banking</p></div>
           <div><p>Mobile Wallets</p></div>
           <div><p>Cash on Delivery</p></div>
-          <div><p>Gift Card</p></div> -->
+          <div><p>Gift Card</p></div>
         </div>
-        <form>
         <div class="col2">
-          <div>New Address</div>
-          <div><input placeholder="NAME" value="" type="text" id="name" /></div>
-          <div><input placeholder="ADDRESS" value="" type="text" id="address" /></div>
-          <div><input placeholder="COUNTRY" value="" type="text" id="country"/></div>
-          <div><input placeholder="PHONE NUMBER" value="" type="number" id="phone" /></div>
-          <div><input placeholder="PIN NUMBER" value="" type="number" id="pincode" /></div>
-          <!-- <div id="expiry">
+          <div>Credit/Debit Card</div>
+          <div><input placeholder="CARD NUMBER" type="number" /></div>
+          <div id="expiry">
             <div>
               <div>Expiry</div>
               <div id="crdinp">
@@ -437,17 +386,13 @@
                 back of the Card
               </div>
             </div>
-          </div> -->
-        </div>
-        
+          </div>
           <div class="ckbox">
             <input type="checkbox" />
-            <div>Use this as my default Shipping Address</div>
+            <div>Save this Card for future</div>
           </div>
-          <input type="submit" id="paynow" value="SHIP TO THIS ADDRESS" onclick="window.location.href='/users/payment'" name="submit"/>
-          <!-- <button onclick="pay()" >SHIP TO THID ADDRESS </button> -->
+          <button onclick="pay()" id="paynow">Pay Now</button>
         </div>
-      </form>
         <div class="col3">
           <div id="itemcnt">
             <div class="vetalgn">
@@ -459,7 +404,6 @@
               expand_less
             </div>
           </div>
-          <!-- ------------------------------------- -->
           <div id="itemdetails">
             <div id="imgdiv"><img id="imgid" src="" alt="" /></div>
             <div id="details">
@@ -468,7 +412,7 @@
               <div>Qty : 1</div>
             </div>
           </div>
-          <div id="pricedetail"></div>
+          <!-- <div id="pricedetail"></div> -->
           <div id="totaldiv">
             <div id="subtotal">
               <div>Sub Total</div>
@@ -492,10 +436,10 @@
             </div>
           </div>
 
-          <!-- <div id="addr">
+          <div id="addr">
             <div>SHIPPING ADDRESS</div>
             <div id="change">CHANGE</div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -504,9 +448,13 @@
     </div>
   </body>
 </html>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
   let crtdata = JSON.parse(localStorage.getItem("popupcartitem")) || [];
   let count = JSON.parse(localStorage.getItem("datacount")) || 1;
+
+  console.log(crtdata);
+
   let img = document.getElementById("imgid");
   let name = document.getElementById("name");
   let weight = document.getElementById("weight");
@@ -519,8 +467,10 @@
   let tl = document.getElementById("disdataa");
   tl.textContent = crtdata.discountsort + "%";
   let gtt = document.getElementById("placeEndd");
-  gtt.textContent = crtdata.MRP;
-
+  gtt.textContent = crtdata.MRP * 100;
+  let amount11 = crtdata.MRPsort;
+  // amount.setAttribute("id", "order-amt");
+  console.log(amount11);
   //   { item:1,
   //   trend:"FEATURED",
   //   product_name:"Beardo Hair Growth Oil",
@@ -534,11 +484,74 @@
   //   image_urlheart:"img/heart.png",
   //   image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/b/e/beardo-hair-growth-oil.jpg",
   // },
- const paymentnew = document.getElementById("paynow");
- paymentnew.addEventListener("click", paynew)
-  function paynew() {
-    
+  let order_id11 = null;
+  let payment_id11 = null;
+  function change() {
+    let netbank = document.getElementsByClassName("col2");
+    netbank[0].innerHTML = "";
+    let button11 = document.createElement("button");
+    button11.setAttribute("class", "netpay");
+    button11.textContent = "Pay Now";
+    netbank[0].append(button11);
+    button11.onclick = function pay() {
+      function oderidfun(e) {
+        var url = "/";
+        var params = {
+          amount: amount11,
+          currency: "INR",
+          receipt: "su001",
+          payment_capture: "1",
+        };
+        console.log(params);
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function (res) {
+          if (xmlHttp.readyState === 4) {
+            res = JSON.parse(xmlHttp.responseText);
+            order_id11 = res.sub.id;
+          }
+        };
+        xmlHttp.open("POST", url, true); // false for synchronous request
+        xmlHttp.setRequestHeader("Content-type", "application/json");
+        xmlHttp.send(JSON.stringify(params));
+      }
+      oderidfun();
+      //===========================================================
+
+      function checkoutfun(e) {
+        var options = {
+          key: "rzp_test_IdSLzN1scz7sMZ", //Enter your razorpay key
+          currency: "INR",
+          name: "Nykaa Payment",
+          description: "Paying for" + " " + name,
+          image: crtdata.image_url,
+          order_id: order_id11,
+          handler: function (response) {
+            payment_id11 = response.razorpay_payment_id;
+            document.getElementById("order-id").value =
+              response.razorpay_order_id;
+            document.getElementById("order-sig").value =
+              response.razorpay_signature;
+          },
+          theme: {
+            color: "#227254",
+          },
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.open();
+        //e.preventDefault();
+      }
+
+      checkoutfun();
+
+      //===========================================================
+
+      alert("Order Placed Successfully your payment id is");
+      window.location.href = "index.html";
+    };
+  }
+
+  function pay() {
     alert("Order Placed Successfully");
-    window.location.href = '/users/payment';
+    window.location.href = "index.html";
   }
 </script>
