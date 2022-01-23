@@ -60,6 +60,6 @@ app.use("/users/signin", signinController);
 app.use("/users/productsnew", productController);
 app.use("/products", productapiController);
 app.use("/carts", cartapiController);
-app.use("/users", addressController);
+app.use("/addresses", addressController);
 
 module.exports = app; 

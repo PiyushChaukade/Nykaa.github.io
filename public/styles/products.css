@@ -208,6 +208,7 @@ height: fit-content;
    grid-row-gap: 1%;
    position: relative;
    margin-left: 1%;
+   margin-bottom: 150px;
 }  
 #imgappend{
   width: 65%;
@@ -464,4 +465,7 @@ table{
 }
 #namepop{
     text-align: center;
+}
+#blurr1{
+  margin-top: 50px;
 }

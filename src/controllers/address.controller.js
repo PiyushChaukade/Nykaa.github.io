@@ -3,16 +3,22 @@ const router = express.Router();
 
 const Address= require("../models/address.model");
 
-
-router.post('/post', async (req, res) => {
+router.get('/', async (req, res) => {
     try{
-         const address= await Address.create(req.body)
-    
          res.render('Address')
         } catch (err) { 
             console.log(err.message);
         }
 })
+// router.post('/post', async (req, res) => {
+//     try{
+//          const address= await Address.create(req.body)
+    
+//          res.render('Address')
+//         } catch (err) { 
+//             console.log(err.message);
+//         }
+// })
 
 // const post = (model) => async(req,res) => {
 //     try {
@@ -36,13 +42,7 @@ router.post('/post', async (req, res) => {
 //     }
 // }
 
-router.get('/', async (req, res) => {
-    try{
-         res.render('Address')
-        } catch (err) { 
-            console.log(err.message);
-        }
-})
+
 // module.exports = (model , page = null) => ({
 //     get: getAll(model, page),
 //     post: post(model)
