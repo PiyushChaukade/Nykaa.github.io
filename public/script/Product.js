@@ -662,9 +662,9 @@ product_nkyaa();
 async function product_nkyaa() {
   try {
 
-    let prods1= await fetch('http://localhost:1880/products');
+    // let prods1= await fetch('http://localhost:1880/products');
 
-     prod = await prods1.json();
+    //  prod = await prods1.json();
 
     showProducts(prod)
   } catch (err) { 
@@ -688,19 +688,19 @@ async function product_nkyaa1() {
   }
 }
 
-let cartData;
-cart_nykaa1();
-async function cart_nykaa1() {
-  try {
-    let carts2 = await fetch('http://localhost:1880/carts');
+// let cartData;
+// cart_nykaa1();
+// async function cart_nykaa1() {
+//   try {
+//     let carts2 = await fetch('http://localhost:1880/carts');
 
-    newCartData = await carts2.json();
+//     newCartData = await carts2.json();
 
-    popupCart(newCartData)
-  } catch (error) {
-    console.log(error.message);
-  }
-}
+//     popupCart(newCartData)
+//   } catch (error) {
+//     console.log(error.message);
+//   }
+// }
 
 
   var right = document.getElementById("container_right");
