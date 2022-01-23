@@ -1,9 +1,12 @@
 const express = require('express');
 const app = express();
 app.use(express.json());
+const mongoose = require('mongoose');
 
 const passport = require('./configs/passport');
 const {register , login} = require('./controllers/auth.controller');
+
+const Address = require("./models/address.model")
 
 const userController = require('./controllers/user.controller');
 const signinController = require('./controllers/signin.controller');
@@ -11,7 +14,7 @@ const productController = require('./controllers/product.controller');
 const productapiController = require('./controllers/productapi.controller.');
 const cartapiController = require('./controllers/cartapi.controller');
 const cartController = require('./controllers/cart.controller');
-
+const addressController = require('./controllers/address.controller');
 
 app.post("/login", login);
 app.post("/register", register);
@@ -57,5 +60,6 @@ app.use("/users/signin", signinController);
 app.use("/users/productsnew", productController);
 app.use("/products", productapiController);
 app.use("/carts", cartapiController);
+app.use("/users", addressController);
 
 module.exports = app; 

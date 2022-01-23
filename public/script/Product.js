@@ -186,7 +186,7 @@ const addCart = (item) => {
 };
 
 function cartpage(){
-  window.location.href="Addres.html"
+  window.location.href="/users/address/"
 }
 
 //-------------------------------------------------------------------
