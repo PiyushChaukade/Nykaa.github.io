@@ -39,7 +39,6 @@ Nykaa is a family of brands and businesses, making it possible for customers aro
 # Authors
 - [sourabh-s1](https://github.com/sourabh-s1)
 - [PiyushChaukade](https://github.com/PiyushChaukade)
-- [viveksh81681](https://github.com/viveksh81681)
 - [rohit753](https://github.com/rohit753)
 
 # How to look up
